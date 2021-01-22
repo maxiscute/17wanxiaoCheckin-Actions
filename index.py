@@ -500,9 +500,9 @@ def server_push(sckey, desp):
     :return:
     """
     bj_time = datetime.datetime.utcnow() + datetime.timedelta(hours=8)
-    bj_time.strftime("%m-%d")
+    date_time = bj_time.strftime("%m-%d")
     send_url = f"https://sc.ftqq.com/{sckey}.send"
-    params = {"text": bj_time+"打卡", "desp": desp}
+    params = {"text": date_time+"打卡", "desp": desp}
     # 发送消息
     for _ in range(3):
         try:
