@@ -697,9 +697,7 @@ def main_handler(*args, **kwargs):
     log_info.append(
         f"""
 >
-> [17wanxiaoCheckin-Actions](https://github.com/ReaJason/17wanxiaoCheckin-Actions)
->
->期待你给项目的star✨
+> 
 """
     )
     if sckey:
