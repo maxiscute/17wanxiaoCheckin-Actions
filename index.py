@@ -502,7 +502,7 @@ def server_push(sckey, desp):
     bj_time = datetime.datetime.utcnow() + datetime.timedelta(hours=8)
     date_time = bj_time.strftime("%m-%d")
     send_url = f"https://sc.ftqq.com/{sckey}.send"
-    params = {"text": date_time+"打卡", "desp": desp}
+    params = {"text":"打卡", "desp": desp}
     # 发送消息
     for _ in range(3):
         try:
